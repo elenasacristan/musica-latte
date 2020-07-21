@@ -1,0 +1,50 @@
+.Home {
+  position: relative;
+  top: -10vh;
+  height: 90vh;
+  width: 95%;
+}
+
+.Home-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Home-intro {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Home-intro img {
+  margin: auto;
+  width: 350px;
+  margin-bottom: 50px;
+}
+.Home-intro p {
+  color: white;
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .Home {
+    width: 100%;
+  }
+
+  .Home-intro {
+    position: relative;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    padding: 20px;
+  }
+  .Home-intro img {
+    width: 250px;
+  }
+  
+}

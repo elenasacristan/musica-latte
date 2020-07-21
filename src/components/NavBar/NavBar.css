@@ -1,0 +1,96 @@
+.NavBar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  height: 10vh;
+}
+
+.NavBar .logo img {
+  width: 200px;
+  padding: 10px;
+}
+
+.NavBar-continer-button-menu {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar-continer-button-menu span {
+  color: #b3b0b0;
+  margin-top: 8px;
+}
+
+.NavBar-button {
+  display: none;
+}
+
+.NavBar-box {
+  display: flex;
+  margin:auto;
+}
+
+.NavBar-box-link {
+  padding: 12px 12px;
+}
+
+.NavBar-box a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+.NavBar-box a:hover {
+  color: rgb(221, 221, 221);
+}
+.NavBar .hamburger {
+  color: white;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .NavBar {
+    flex-direction: column;
+  }
+
+  .NavBar-continer-button-menu {
+    justify-content: flex-end;
+  }
+
+  .NavBar-continer-button-menu span {
+    display: none;
+  }
+
+  .NavBar-button {
+    position: absolute;
+    top: -50px;
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  .NavBar-button:focus,
+  .NavBar-button:active {
+    border: none;
+    outline: none;
+  }
+
+  .NavBar-box {
+    display: none;
+  }
+
+  .NavBar-box.is-open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+  }
+
+  .NavBar-box-link {
+    border-top: 3px solid rgb(232, 232, 232);
+  }
+ 
+}
