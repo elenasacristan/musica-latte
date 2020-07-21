@@ -10,7 +10,7 @@ export default function NavBar() {
     <div className="NavBar">
       <div className="logo">
         <span>
-          <Link smooth to="#about" activeClassName="selected">
+          <Link smooth to="#home" activeClassName="selected">
             <img src={Logo} alt="logo" />
           </Link>
         </span>
@@ -20,25 +20,25 @@ export default function NavBar() {
           <FaAlignJustify className="hamburger" />
         </button>
         <div className={`NavBar-box ${isOpen ? "is-open" : ""}`}>
-          <Link smooth to="#about">
+          <Link smooth to="#home">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Inicio
             </div>
           </Link>
           <span>|</span>
-          <Link smooth to="#portfolio">
+          <Link smooth to="#info">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Info
             </div>
           </Link>
           <span>|</span>
-          <Link smooth to="#skills">
+          <Link smooth to="#musica">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Musica
             </div>
           </Link>
           <span>|</span>
-          <Link smooth to="#contact">
+          <Link smooth to="#contacto">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Contacto
             </div>
