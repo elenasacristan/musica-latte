@@ -17,17 +17,18 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  width: 450px;
 }
 
 .Home-intro img {
   margin: auto;
   width: 350px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .Home-intro p {
   color: white;
   font-family: "Caveat", cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -46,5 +47,4 @@
   .Home-intro img {
     width: 250px;
   }
-  
 }

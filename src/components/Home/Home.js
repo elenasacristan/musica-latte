@@ -9,7 +9,7 @@ export default function Home() {
       <div className="Home-wrapper">
           <div className="Home-intro">
           <img src={logo} alt="logo"/>
-              <p>Música para el bienestar, la integración <br/>social y el desarrollo personal.</p>
+              <p>Música para el bienestar, la integración social y el desarrollo personal.</p>
           </div>
       </div>
     </div>
