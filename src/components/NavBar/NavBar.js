@@ -18,7 +18,7 @@ export default function NavBar() {
     window.addEventListener("scroll", listenScrollEvent);
   });
   console.log(headerColor);
-  
+
   return (
     <div className={`NavBar ${headerColor}`}>
       <div className="logo">

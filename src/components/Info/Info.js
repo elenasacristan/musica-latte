@@ -22,7 +22,7 @@ export default function Info() {
             {items
               .filter(({ category }) => category === "queremos")
               .map(({ icon, name, text }) => (
-                <Item icon={icon} title={name} text={text} />
+                <Item key={name} icon={icon} title={name} text={text} />
               ))}
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Info() {
             {items
               .filter(({ category }) => category === "hacemos")
               .map(({ icon, name, text }) => (
-                <Item icon={icon} title={name} text={text} />
+                <Item key={name} icon={icon} title={name} text={text} />
               ))}
           </div>
         </div>
