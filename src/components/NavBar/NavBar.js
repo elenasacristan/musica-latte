@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import Logo from "../../common/images/MLlogo.svg";
 import { FaAlignJustify } from "react-icons/fa";
@@ -6,8 +6,21 @@ import { NavHashLink as Link } from "react-router-hash-link";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [headerColor, setHeaderColor] = useState("white");
+
+  const listenScrollEvent = () => {
+    window.pageYOffset > 550
+      ? setHeaderColor("Nav-black")
+      : setHeaderColor("Nav-transparent");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
+  console.log(headerColor);
+  
   return (
-    <div className="NavBar">
+    <div className={`NavBar ${headerColor}`}>
       <div className="logo">
         <span>
           <Link smooth to="#home" activeClassName="selected">

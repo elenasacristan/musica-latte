@@ -1,6 +1,7 @@
 import React from "react";
 import "./Info.css";
 import Item from "./Item/Item";
+import Items from "./items.json";
 
 export default function Info() {
   return (
@@ -9,25 +10,11 @@ export default function Info() {
         <h2 className="Info-heading">Lo que queremos</h2>
         <div className="Info-wrapper container">
           <div className="row">
-            <Item
-              icon="GiCutDiamond"
-              title="Propósito"
-              p1="Generar bienestar y mejorar la calidad de vida de las personas."
-              p2="Favorecer la integración social."
-              p3="Potenciar el desarrollo personal."
-            />
-            <Item
-              icon="GiBullseye"
-              title="Misión"
-              p1="Acercar la musica a todos y todas a través de conciertos, talleres, formación y otras actividades."
-            />
-            <Item
-              icon="FaEye"
-              title="Visión"
-              p1="Concienciar del poder que tiene la música en la salud."
-              p2="Dotar de música al entorno laboral y personal."
-              p3="Poner el foco en las personas en riesgo de exclusión social."
-            />
+            {Items.filter(({ category }) => category === "queremos").map(
+              ({ icon, name, text }) => (
+                <Item icon={icon} title={name} text={text} />
+              )
+            )}
           </div>
         </div>
       </div>
@@ -35,25 +22,11 @@ export default function Info() {
         <h2 className="Info-heading">Lo que queremos</h2>
         <div className="Info-wrapper container">
           <div className="row">
-            <Item
-              icon="GiCutDiamond"
-              title="Propósito"
-              p1="Generar bienestar y mejorar la calidad de vida de las personas."
-              p2="Favorecer la integración social."
-              p3="Potenciar el desarrollo personal."
-            />
-            <Item
-              icon="GiBullseye"
-              title="Misión"
-              p1="Acercar la musica a todos y todas a través de conciertos, talleres, formación y otras actividades."
-            />
-            <Item
-              icon="FaEye"
-              title="Visión"
-              p1="Concienciar del poder que tiene la música en la salud."
-              p2="Dotar de música al entorno laboral y personal."
-              p3="Poner el foco en las personas en riesgo de exclusión social."
-            />
+          {Items.filter(({ category }) => category === "hacemos").map(
+              ({ icon, name, text }) => (
+                <Item icon={icon} title={name} text={text} />
+              )
+            )}
           </div>
         </div>
       </div>

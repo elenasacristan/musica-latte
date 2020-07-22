@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiCutDiamond, GiBullseye, GiMicrophone } from "react-icons/gi";
 import { FaEye, FaMusic, FaHandHoldingHeart } from "react-icons/fa";
 
-
-export default function Item({ icon, title, p1, p2, p3 }) {
+export default function Item({ icon, title, text }) {
   let icono;
 
   if (icon === "GiCutDiamond") {
@@ -12,6 +11,12 @@ export default function Item({ icon, title, p1, p2, p3 }) {
     icono = <GiBullseye className="Info-icono" />;
   } else if (icon === "FaEye") {
     icono = <FaEye className="Info-icono" />;
+  } else if (icon === "GiMicrophone") {
+    icono = <GiMicrophone className="Info-icono" />;
+  } else if (icon === "FaMusic") {
+    icono = <FaMusic className="Info-icono" />;
+  }else if (icon === "FaHandHoldingHeart") {
+    icono = <FaHandHoldingHeart className="Info-icono" />;
   }
 
   return (
@@ -19,9 +24,9 @@ export default function Item({ icon, title, p1, p2, p3 }) {
       {icono}
       <h3 className="Info-item-heading">{title}</h3>
       <ul>
-        <li>{p1}</li>
-        {p2 ? <li>{p2}</li> : ""}
-        {p2 ? <li>{p3}</li> : ""}
+        {text.split('. ').map((sentence, index) => (
+          <li key={index}>{sentence}</li>
+        ))}
       </ul>
     </div>
   );

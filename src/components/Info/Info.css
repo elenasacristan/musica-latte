@@ -43,3 +43,8 @@
 .Info-block-blue .Info-heading{
   color: #924D6A;
 }
+
+.Info-block-blue ul{
+  list-style: none;
+  text-align: center;
+}

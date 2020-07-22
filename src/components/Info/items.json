@@ -1,11 +1,39 @@
 [
-    {
-        "icon":"",
-        "name":"",
-        "p1":"",
-        "p2":"",
-        "p3":"",
-        "p4":"",
-        "p5":""
-    }
+  {
+    "icon": "GiCutDiamond",
+    "name": "Propósito",
+    "text": "Generar bienestar y mejorar la calidad de vida de las personas. Favorecer la integración social. Potenciar el desarrollo personal.",
+    "category": "queremos"
+  },
+  {
+    "icon": "GiBullseye",
+    "name": "Misión",
+    "text": "Acercar la musica a todos y todas a través de conciertos, talleres, formación y otras actividades.",
+    "category": "queremos"
+  },
+  {
+    "icon": "FaEye",
+    "name": "Visión",
+    "text": "Concienciar del poder que tiene la música en la salud. Dotar de música al entorno laboral y personal. Poner el foco en las personas en riesgo de exclusión social.",
+    "category": "queremos"
+  },
+  {
+    "icon": "GiMicrophone",
+    "name": "Conciertos",
+    "text": "Para ocio y cultura. Para sensibilizar. Para el recuerdo. Para centros educativos. Para relajación y sanación. Para celebraciones.",
+    "category": "hacemos"
+  },
+  {
+    "icon": "FaHandHoldingHeart",
+    "name": "Talleres",
+    "text": "Coro. Percusión. 'Vive la música'. Baile y movimiento adaptado.",
+    "category": "hacemos"
+  },
+  {
+    "icon": "FaMusic",
+    "name": "Formación",
+    "text": "Guitarra. Charlas. 'Libera tu voz'. Coaching musical. Organización de eventos musicales.",
+    "category": "hacemos"
+  }
+
 ]

@@ -9,7 +9,6 @@ export default function Main() {
   return (
     <div id="home">
       <NavBar />
-
       <Home />
       <Info id="info" />
       <Musica id="musica" />
