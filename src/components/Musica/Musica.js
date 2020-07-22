@@ -1,5 +1,6 @@
 import React from "react";
 import "./Musica.css";
+import Video from "./Video/Video";
 
 export default function Musica() {
   return (
@@ -7,27 +8,11 @@ export default function Musica() {
       <div className="container">
         <h2 className="Musica-heading">Musica</h2>
         <div className="Musica-wrapper">
-          <div className="Musica-video">
-            <iframe
-              src="http://www.youtube.com/embed/qKwPsEEn-r0?autoplay=1&showinfo=0"
-            title="video1" allowfullscreen="true"></iframe>
-          </div>
-          <div className="Musica-video">
-            <iframe
-              src="http://www.youtube.com/embed/qKwPsEEn-r0?autoplay=1&showinfo=0" title="video2" allowfullscreen="true"
-            ></iframe>
-          </div>
-          <div className="Musica-video">
-            <iframe
-              src="http://www.youtube.com/embed/qKwPsEEn-r0?autoplay=1&showinfo=0" title="video3" allowfullscreen="true"
-            ></iframe>
-          </div>
-          <div className="Musica-video">
-            <iframe
-              
-              src="http://www.youtube.com/embed/qKwPsEEn-r0?autoplay=1&showinfo=0" title="video4" allowfullscreen="true"
-            ></iframe>
-          </div>
+          <Video videoId="qKwPsEEn-r0" title="title"/>
+          <Video videoId="qKwPsEEn-r0" title="title"/>
+          <Video videoId="qKwPsEEn-r0" title="title"/>
+          <Video videoId="qKwPsEEn-r0" title="title"/>
+          <Video videoId="qKwPsEEn-r0" title="title"/>
         </div>
       </div>
     </div>
