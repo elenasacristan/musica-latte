@@ -1,0 +1,38 @@
+.Info-item-heading {
+  padding: 6% 0 1%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: Montserrat;
+}
+
+.Info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+.Info-icono {
+  font-size: 3rem;
+  color: #6d6d6d;
+}
+
+.Info-item h4 {
+  color: #5eb7c1;
+}
+
+.Info-item li {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1400px;
+  }
+}

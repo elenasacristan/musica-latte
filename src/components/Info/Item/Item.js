@@ -1,6 +1,7 @@
 import React from "react";
 import { GiCutDiamond, GiBullseye, GiMicrophone } from "react-icons/gi";
 import { FaEye, FaMusic, FaHandHoldingHeart } from "react-icons/fa";
+import "./Item.css";
 
 export default function Item({ icon, title, text }) {
   let icono;
@@ -15,16 +16,16 @@ export default function Item({ icon, title, text }) {
     icono = <GiMicrophone className="Info-icono" />;
   } else if (icon === "FaMusic") {
     icono = <FaMusic className="Info-icono" />;
-  }else if (icon === "FaHandHoldingHeart") {
+  } else if (icon === "FaHandHoldingHeart") {
     icono = <FaHandHoldingHeart className="Info-icono" />;
   }
 
   return (
     <div className="Info-item col-md-4">
       {icono}
-      <h3 className="Info-item-heading">{title}</h3>
+      <h4 className="Info-item-heading">{title}</h4>
       <ul>
-        {text.split('. ').map((sentence, index) => (
+        {text.split(". ").map((sentence, index) => (
           <li key={index}>{sentence}</li>
         ))}
       </ul>

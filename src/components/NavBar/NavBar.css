@@ -3,12 +3,12 @@
   top: 0px;
   z-index: 1;
   display: flex;
-  height: 12vh;
+  height: 10vh;
 }
 
 .Nav-black {
   transition: background-color 2s ease;
-  background-color: rgba(0, 0, 0, 0.712);
+  background-color: #6d6d6d;
 }
 
 .Nav-transparent {
@@ -16,7 +16,7 @@
 }
 
 .NavBar .logo img {
-  height: 12vh;
+  height: 10vh;
   padding: 10px;
 }
 
@@ -50,6 +50,8 @@
   text-decoration: none;
   color: white;
   font-size: 0.8rem;
+  font-family: Montserrat;
+  font-weight: bold;
 }
 .NavBar-box a:hover {
   color: rgb(221, 221, 221);
