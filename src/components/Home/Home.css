@@ -34,11 +34,13 @@
   .Home {
     width: 100%;
   }
-
   .Home-intro {
     background-color: rgba(0, 0, 0, 0.466);
     width: 100%;
     padding: 20px;
+  }
+  .Home-intro p{
+    padding-bottom: 50px;
   }
   .Home-intro img {
     width: 250px;
