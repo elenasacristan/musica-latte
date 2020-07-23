@@ -5,7 +5,7 @@ export default function Video({ videoId, title}) {
   return (
     <div className="Musica-video">
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}?&color=white&rel=0`}
+        src={`https://www.youtube.com/embed/${videoId}?&color=white&rel=0&mute=0`}
         title={title}
         allowfullscreen="true"
         frameborder="0"
