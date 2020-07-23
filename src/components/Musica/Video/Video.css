@@ -1,16 +1,16 @@
-  .Musica-video {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-  }
+.Musica-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
 
-  .Musica-video iframe{
-      position: absolute;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid rgb(170, 170, 170);
-      border-radius: 15px;
-  }
+.Musica-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 8px 2px #000000;
+  border-radius: 15px;
+}

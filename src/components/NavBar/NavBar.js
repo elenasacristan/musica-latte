@@ -6,16 +6,21 @@ import { NavHashLink as Link } from "react-router-hash-link";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [headerColor, setHeaderColor] = useState("white");
+  const [headerColor, setHeaderColor] = useState("");
+  const [menuColor, setMenuColor] = useState("");
 
   const listenScrollEvent = () => {
-    window.pageYOffset > 550
+    window.pageYOffset > 380
       ? setHeaderColor("Nav-red")
       : setHeaderColor("Nav-transparent");
+    window.pageYOffset > 380
+      ? setMenuColor("menu-red")
+      : setMenuColor("menu-transparent");
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
+    
   });
 
   return (
@@ -31,7 +36,7 @@ export default function NavBar() {
         <button className="NavBar-button" onClick={() => setIsOpen(!isOpen)}>
           <FaAlignJustify className="hamburger" />
         </button>
-        <div className={`NavBar-box ${isOpen ? "is-open" : ""}`}>
+        <div className={`NavBar-box ${menuColor} ${isOpen ? "is-open" : ""}`}>
           <Link smooth to="#home">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Inicio

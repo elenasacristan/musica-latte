@@ -1,7 +1,7 @@
 .Musica {
   position: relative;
-  background-color: #151414;
-  padding: 0 10% 5%;
+  background-color: #4d4d4d;
+  padding: 0 10% 15%;
 }
 
 .Musica-heading {
@@ -12,7 +12,7 @@
   /* color: #5eb7c1; */
   color:white;
   font-family: Molle;
-  border-bottom: 5px #80808040 dotted;
+  border-bottom: 5px #8b8b8b dotted;
   margin-bottom: 80px;
 }
 

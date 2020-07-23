@@ -7,8 +7,9 @@
 }
 
 .Nav-red {
-  transition: background-color 2s ease;
-  background-color: #c55758;}
+  transition: background-color 1s ease;
+  background-color: #c55758;
+}
 
 .Nav-transparent {
   background-color: rgba(0, 0, 0, 0);
@@ -95,11 +96,23 @@
   .NavBar-box.is-open {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.63);
   }
 
   .NavBar-box-link {
-    border-top: 3px solid rgb(232, 232, 232);
+    text-align: right;
+    border-top: 0.5px solid rgb(232, 232, 232);
+    padding: 20px 12px;
+  }
+
+  .NavBar-box.is-open.menu-transparent .NavBar-box-link{
+background-color: rgba(0, 0, 0, 0.65);
+  } 
+
+  .NavBar-box.is-open.menu-red {
+    transition: background-color 1s ease;
+    width: 100%;
+    background-color: #c55759;
   }
 }

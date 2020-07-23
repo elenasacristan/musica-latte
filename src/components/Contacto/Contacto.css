@@ -1,6 +1,48 @@
 .Contacto {
-  position: relative;
-  top: 14vh;
-  height: 86vh;
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: white;
+  height: 100vh;
+}
+
+.Contacto-heading {
+  padding-top: 14vh;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  color: #c55758;
+  font-family: Molle;
+  border-bottom: 5px #80808040 dotted;
+  /* margin-bottom: 40px; */
+}
+
+.Contacto-subheading-heading {
+  font-family: "Caveat", cursive;
+}
+
+.Contacto-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding-bottom: 50px;
+}
+
+.Contact-item {
+  padding: 3%;
+}
+
+@media (max-width: 800px) {
+  .Contact-item img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Contacto-wrapper {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .Contact-item img {
+    width: 80px;
+  }
 }
