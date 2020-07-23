@@ -32,7 +32,6 @@ export default function Contacto() {
               <img src={mail} alt="mail link" />
             </a>
           </div>
-
           <div className="Contact-item">
             <a
               href="https://www.facebook.com/musicalatte.paratodos"
