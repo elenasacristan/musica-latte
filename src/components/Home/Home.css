@@ -5,9 +5,9 @@
 
 .Home-wrapper {
   display: flex;
-  height: 90vh;
   flex-direction: column;
   justify-content: flex-end;
+  height: 90vh;
 }
 
 .Home-intro {
