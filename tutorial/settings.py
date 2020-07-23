@@ -37,7 +37,7 @@ SECRET_KEY = os.environ.get('SECRET_KET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['django-react-tutorial-elena.herokuapp.com']
+ALLOWED_HOSTS = ['musica-latte.herokuapp.com']
 
 
 # Application definition
