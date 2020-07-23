@@ -1,13 +1,11 @@
 .Home {
   position: relative;
-  top: -10vh;
-  height: 90vh;
   width: 95%;
 }
 
 .Home-wrapper {
   display: flex;
-  height: 100%;
+  height: 90vh;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -35,7 +33,6 @@
 @media (max-width: 600px) {
   .Home {
     width: 100%;
-    height: 100vh;
   }
 
   .Home-intro {

@@ -20,6 +20,9 @@
 .Info-block {
   margin-bottom: 0;
 }
+.Info-block ul{
+  padding-right: 15px;
+}
 .Info-block-blue ul {
   font-weight: 400;
 }
