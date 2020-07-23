@@ -10,14 +10,13 @@ export default function NavBar() {
 
   const listenScrollEvent = () => {
     window.pageYOffset > 550
-      ? setHeaderColor("Nav-black")
+      ? setHeaderColor("Nav-red")
       : setHeaderColor("Nav-transparent");
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   });
-  console.log(headerColor);
 
   return (
     <div className={`NavBar ${headerColor}`}>

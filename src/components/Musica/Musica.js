@@ -1,20 +1,28 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Musica.css";
 import Video from "./Video/Video";
 
 export default function Musica() {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    fetch("/videos/")
+      .then((res) => res.json())
+      .then((data) => {
+        setVideos(data);
+        console.log(data)
+      });
+  }, []);
+
+
   return (
     <div className="Musica" id="musica">
-      <div className="container">
         <h2 className="Musica-heading">Musica</h2>
         <div className="Musica-wrapper">
-          <Video videoId="qKwPsEEn-r0" title="title"/>
-          <Video videoId="qKwPsEEn-r0" title="title"/>
-          <Video videoId="qKwPsEEn-r0" title="title"/>
-          <Video videoId="qKwPsEEn-r0" title="title"/>
-          <Video videoId="qKwPsEEn-r0" title="title"/>
+        {
+          videos.map((video,index) => <Video key={index} videoId={video.videoId} title={video.title}/>)
+        }
         </div>
-      </div>
     </div>
   );
 }
