@@ -7,8 +7,8 @@ export default function Video({ videoId, title}) {
       <iframe
         src={`https://www.youtube.com/embed/${videoId}?&color=white&rel=0&mute=0`}
         title={title}
-        allowfullscreen="true"
-        frameborder="0"
+        allowFullScreen={true}
+        frameBorder="0"
       ></iframe>
     </div>
   );

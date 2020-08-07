@@ -55,6 +55,12 @@ export default function NavBar() {
             </div>
           </Link>
           <span>|</span>
+          <Link smooth to="#gallery">
+            <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
+              Gallery
+            </div>
+          </Link>
+          <span>|</span>
           <Link smooth to="#contacto">
             <div className="NavBar-box-link" onClick={() => setIsOpen(false)}>
               Contacto

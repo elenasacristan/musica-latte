@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'items',
-    'videos'
+    'videos',
+    'gallery'
 ]
 
 MIDDLEWARE = [
@@ -154,6 +155,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 CORS_ORIGIN_WHITELIST = [

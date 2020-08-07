@@ -1,0 +1,32 @@
+.Gallery {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-top: 12vh;
+    padding: 0 10%;
+
+  }
+
+  .my-masonry-grid {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    background-clip: padding-box;
+  }
+  
+  .my-masonry-grid_column > img { 
+    width: 100%;
+    padding: 2%;
+  }
+
+  .Gallery-heading {
+    padding-top: 14vh;
+    text-align: center;
+    font-size: 3rem;
+    color:#2994a4;
+    font-family: Molle;
+    border-bottom: 5px #8b8b8b dotted;
+    margin-bottom: 80px;
+  }
