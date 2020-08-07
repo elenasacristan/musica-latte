@@ -6,6 +6,7 @@ django-heroku==0.3.1
 djangorestframework==3.11.0
 future==0.18.2
 gunicorn==20.0.4
+Pillow==7.2.0
 psycopg2==2.8.5
 pytz==2020.1
 serializers==0.2.4
