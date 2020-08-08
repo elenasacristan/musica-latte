@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'items',
     'videos',
-    'gallery'
+    'gallery',
+    'storages',
 ]
 
 MIDDLEWARE = [
