@@ -13,6 +13,7 @@ export default function Contacto() {
         <h3 className="Contacto-subheading-heading text-center">
           ¡Contacta con nosotros y te haremos un plan a tu medida!
         </h3>
+        
         <div className="Contacto-wrapper">
           <div className="Contact-item">
             <a
@@ -42,6 +43,7 @@ export default function Contacto() {
             </a>
           </div>
         </div>
+        <h4 className="Contact-phone text-center">Tel: +34 676 92 42 85</h4>
       </div>
     </div>
   );

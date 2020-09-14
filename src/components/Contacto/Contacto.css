@@ -1,6 +1,5 @@
 .Contacto {
   background-color: white;
-  height: 100vh;
 }
 
 .Contacto-heading {
@@ -18,13 +17,21 @@
   font-family: "Caveat", cursive;
 }
 
+.Contact-phone {
+  font-family: "Caveat", cursive;
+  font-weight: 800;
+  padding-bottom: 50px;
+  margin: 0;
+  color: #2994a4;
+  font-size: 2rem;
+}
+
 .Contacto-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 50vh;
-  padding-bottom: 50px;
 }
 
 .Contact-item {
@@ -45,4 +52,5 @@
   .Contact-item img {
     width: 80px;
   }
+ 
 }
