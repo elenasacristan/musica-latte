@@ -22,8 +22,8 @@ export default function Gallery() {
   };
 
   return (
-    <div className="Gallery" id="gallery">
-        <h2 className="Gallery-heading">Gallery</h2>
+    <div className="Gallery" id="fotos">
+        <h2 className="Gallery-heading">Fotos</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
